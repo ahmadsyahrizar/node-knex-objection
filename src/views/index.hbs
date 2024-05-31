@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js">
+        </script>
+        <title>TEST BINAR CH 6 DESIGN PATTERN</title>
+    </head>
+
+    <body>
+        <h1>TEST BINAR CH 6 DESIGN PATTERN</h1>
+        <div>data</div>
+        <div>data car name </div>
+        <td>
+            {{#each cars}}
+            <tr>
+                <td>
+                    car name : {{ this.name }}
+                </td>
+            </tr>
+
+            {{/each}}
+        </td>
+    </body>
+
+</html>

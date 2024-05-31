@@ -19,9 +19,15 @@ const knexInstance = knex({
 })
 
 Model.knex(knexInstance)
+
+app.set('view engine', 'hbs');
+app.engine('html', require('hbs').__express);
+app.set("views", "src/views")
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+//  /cars -> router
 app.use("/cars", carsRouter);
 
 // route testing
